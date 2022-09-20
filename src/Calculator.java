@@ -10,7 +10,7 @@ public class Calculator {
     // BinaryOperator<Integer> devide = (x, y) -> x / y;
     // Эта строчка не сработает, так как нет проверки на то, какое число было введено
     // Можно сделать так
-    BinaryOperator<Integer> devide = (x, y) -> y == 0 ? y : x / y;
+    BinaryOperator<Integer> devide = (x, y) -> y == 0 ? 1 : x / y;
 
     UnaryOperator<Integer> pow = x -> x * x;
     UnaryOperator<Integer> abs = x -> x > 0 ? x : x * -1;
